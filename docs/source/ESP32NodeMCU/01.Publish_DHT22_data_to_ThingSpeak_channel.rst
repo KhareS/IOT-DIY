@@ -1,0 +1,20 @@
+.. _ESP32_NodeMCU_Publish_DHT22_data_to_local_Mosquitto_server_and_ThingSpeak_Channel:
+
+********************************************************************************
+Publish DHT22 sensor data to local Mosquitto server and ThingSpeak Channel
+********************************************************************************
+
+|
+
+
+
+Historical perspective
+===========================
+
+|
+
+
+The fundamentals
+--------------------------
+
+|
