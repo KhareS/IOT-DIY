@@ -5,7 +5,7 @@ IOT-DIY tutorials
 Hello! Welcome to IOT-DIY tutorials.
 
 
-Internet of things (IOT) Do it yourself (DIY) tutorials will help you with simple examples to connect various devices, sensors and actuators.
+Internet of things (IOT) do it yourself (DIY) tutorials will help you with simple examples to connect various devices, sensors and actuators.
 
 Tutorials are created for learning purpose, and are not technical documentation. Please read respective technical documents for more information.
 
