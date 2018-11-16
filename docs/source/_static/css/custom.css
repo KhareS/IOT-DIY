@@ -1,0 +1,6 @@
+
+/* https://docs.readthedocs.io/en/latest/guides/remove-edit-buttons.html */
+/* Hide "On GitHub" section from versions menu */
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
+    display: none;
+}
