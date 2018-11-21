@@ -128,7 +128,7 @@ Number of attempts
 .. note::
     Restricting infinite loop with number of attempts.
 
-    variable `noOfAttemptForWiFiConn`, checks how many number of attempts user has made, once reaches to the threshold stops in establishing the connecting. 
+    variable `noOfAttemptForWiFiConn`, checks number of attempts user has made, once reaches to the threshold loop stops in establishing the connecting. 
 
 
 
