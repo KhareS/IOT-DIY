@@ -33,7 +33,7 @@ Pre-requisites
 
 * Arduino ESP32 support on windows. `Arduino-ESP32 <https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/windows.md>`_
 
-* Mosquitto MQTT server on Raspberry Pi 3
+* `Mosquitto <http://mosquitto.org/>`_ MQTT server on Raspberry Pi 3
 
 * `DHTesp library`, download from `DHTesp <https://github.com/beegee-tokyo/DHTesp/>`_
 
@@ -63,7 +63,7 @@ ESP32 NodeMCU
 `ESP32 <https://www.espressif.com/en/products/hardware/esp32/overview>`_ is a successor of ESP8266 released by express-if.  
 
 .. tip::
-    There are 34 distinct GPIOs available on the ESP32 NodeMCU. They are identified as:
+    There are 34 distinct `GPIOs` available on the `ESP32 NodeMCU`. They are identified as:
 
     • GPIO_NUM_0 – GPIO_NUM_19
     • GPIO_NUM_21 – GPIO_NUM_23
@@ -77,7 +77,7 @@ ESP32 NodeMCU
 
     GPIO_NUM_34 – GPIO_NUM_39 are input mode only. You can not use these pins for signal output. 
 
-    Also, pins 6, 7, 8, 9, 10 and 11 are used to interact with the SPI flash chip. You can not use those for other purposes.
+    Also, pins 6, 7, 8, 9, 10 and 11 are used to interact with the `SPI` flash chip. You can not use those for other purposes.
 
 
 |
@@ -687,9 +687,19 @@ loop function
 
 
 
-Testing/Debug 
+Test/Debug 
 ---------------
 
+**MQTT.FX**
+
+  A JavaFX based Desktop `MQTT` client such as `MQTT.FX` is used to test/debug a channel. `How to use desktop MQTT Client MQTT.FX? <https://in.mathworks.com/help/thingspeak/use-desktop-mqtt-client-to-publish-to-a-channel.html>`_
+
+**Mosquitto**
+
+  Before sending payload to remote server, test reading on `Mosquitto <http://mosquitto.org/>`_ server running locally at Raspberry Pi 3. 
+
+
+|
 
 
 Complete code 
