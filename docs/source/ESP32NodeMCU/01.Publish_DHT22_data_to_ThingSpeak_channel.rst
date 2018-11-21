@@ -46,7 +46,7 @@ Pre-requisites
 Overview
 -----------
 
-ESP32 NodeMCU micro-controller will connect with DHT22 sensor, collects temperature and humidity reading, using WiFi publishes payload to MQTT server running on Raspberry Pi 3 and also publish payload to ThingSpeak server and readings can be visible on ThingSpeak public channel. Local MQTT server on Raspberry Pi 3 is used for test/debug purpose only. 
+ESP32 NodeMCU micro-controller collects temperature and humidity reading from DHT22 sensor, using WiFi connectivity publishes payload to MQTT server running on Raspberry Pi 3 and also publish payload to ThingSpeak server and readings can be visible on ThingSpeak public channel. Local MQTT server on Raspberry Pi 3 is used for test/debug purpose only. 
 
 
 Result
