@@ -35,7 +35,7 @@ Pre-requisites
 
 * Mosquitto MQTT server on Raspberry Pi 3
 
-* `DHTesp library` download from `DHTesp <https://github.com/beegee-tokyo/DHTesp/>`_
+* `DHTesp library`, download from `DHTesp <https://github.com/beegee-tokyo/DHTesp/>`_
 
 * Account on `ThingSpeak <https://thingspeak.com>`_
 
@@ -46,15 +46,15 @@ Pre-requisites
 Overview
 -----------
 
-ESP32 NodeMCU micro-controller collects temperature and humidity reading from DHT22 sensor, using WiFi connectivity publishes payload to MQTT server running on Raspberry Pi 3 and also publish payload to ThingSpeak server and readings can be seen on ThingSpeak public channel. 
+`ESP32 NodeMCU` micro-controller collects temperature and humidity reading from `DHT22` sensor, using `WiFi` connectivity publishes payload to `MQTT` server running on `Raspberry Pi 3` and also publish payload to `ThingSpeak` server and readings can be seen on `ThingSpeak` public channel. 
 
-Local MQTT server on Raspberry Pi 3 is used for test/debug purpose only. 
+Local `MQTT` server on `Raspberry Pi 3` is used for test/debug purpose only. 
 
 
 Result
 -------
 
-Readings on ThingSpeak public channel: https://thingspeak.com/channels/470442
+Readings on `ThingSpeak` public channel: https://thingspeak.com/channels/470442
 
 
 ESP32 NodeMCU
@@ -114,7 +114,7 @@ WiFi settings
 
 
 .. note::
-    Replace ssid and pwd with your WiFi SSID and password
+    Replace `ssid` and `pwd` with your `WiFi SSID` and `password`.
     
 
 Number of attempts
@@ -124,6 +124,12 @@ Number of attempts
 
     byte noOfAttemptForWiFiConn = 30;       // Number of attempts, give user to try for WiFi & MQTT server connection. 
                                             // 120 = 1 minute. Restricting infinite attempts
+
+.. note::
+    Restricting infinite loop with number of attempts.
+
+    variable `noOfAttemptForWiFiConn`, checks how many number of attempts user has made, once reaches to the threshold stops in establishing the connecting. 
+
 
 
 MQTT Server details running on Raspberry Pi 3
@@ -163,7 +169,7 @@ ThinkSpeak Server settings
     char* thinkSpeakServer = "mqtt.thingspeak.com";
 
 .. note::
-    Copy channel id and API key from ThingSpeak server.    
+    Copy `channel id` and `API` key from ThingSpeak server.    
 
 
 
@@ -264,7 +270,7 @@ WiFi connection & disconnection
         */
 
      /*   
-      *    Debugging purpose to which WiFi network board is connected
+      *    Debugging purpose to which WiFi network, ESP32 board is connected
       *    Comment in production
      */
      if(WiFi.status() == WL_CONNECTED){
@@ -677,6 +683,12 @@ loop function
       yield();
 
     }
+
+
+
+
+Testing/Debug 
+---------------
 
 
 
